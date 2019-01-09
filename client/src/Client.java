@@ -2,6 +2,10 @@ import java.io.*;
 import java.net.*;
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
 
 public class Client{
 
@@ -9,6 +13,139 @@ public class Client{
 	public static String voisinGauche(Labyrinthe laby , int x ,int y){
 		return laby.getXY(x-1,y).toString();
 	}
+
+
+
+	public static String chemin (){
+
+		String msg="";
+		int test = (int)(Math.random()*4);
+
+		if(test == 0){
+			msg="E";
+		}
+		else if (test == 1) {
+			msg="O";
+		}
+		else if (test == 2) {
+			msg="N";
+		}
+		else if (test == 3) {
+			msg="S";
+		}
+
+
+		return msg;
+	}
+
+
+	public static boolean culDeSac (Labyrinthe laby , int x , int y , String direction ){
+
+		boolean culDeSac = false;
+
+		if ( direction == "N"){
+
+			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE){
+				culDeSac = true;
+			}
+		}
+		else if ( direction == "S"){
+
+			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
+				culDeSac = true;
+			}
+		}
+		else if ( direction == "O"){
+
+			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
+				culDeSac = true;
+			}
+		}
+		else if ( direction == "E"){
+
+			if (laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
+				culDeSac = true;
+			}
+		}
+
+
+
+
+		return culDeSac;
+	}
+
+	public static String chemin2 (Labyrinthe laby, int x, int y){
+
+
+		String msg ="";
+		String[] chemin = new String[50];
+		List l = new LinkedList();
+
+		int postionTableau = 0;
+		boolean deplaceNord;
+		boolean deplaceSud;
+		boolean deplaceOuest;
+		boolean deplaceEst;
+		String deplacement ="";
+		Case positionJoueur = new Case(x,y);
+
+
+		boolean trouveMoule = false;
+
+
+
+		while (trouveMoule) {
+
+			postionTableau = 0;
+			while (postionTableau < 50 && !culDeSac(laby, x,y, pos) ) {
+
+
+				deplaceNord = laby.marchable(x, y - 1);
+				deplaceSud = laby.marchable(x, y + 1);
+				deplaceOuest = laby.marchable(x + 1, y);
+				deplaceEst = laby.marchable(x - 1, y);
+
+				if (deplaceNord) {
+					l.add("N");
+				}
+				if (deplaceSud) {
+					l.add("S");
+				}
+				if (deplaceOuest) {
+					l.add("O");
+				}
+				if (deplaceEst) {
+					l.add("E");
+				}
+
+				int nbAleatoire = (int) (Math.random() * l.size());
+
+				deplacement = String.valueOf(l.get(nbAleatoire));
+				chemin[postionTableau] = deplacement;
+
+				if (deplacement == "N") {
+					x++;
+				} else if (deplacement == "S") {
+					x--;
+				} else if (deplacement == "O") {
+					y++;
+				} else {
+					y--;
+				}
+
+				if(laby.getXY(x,y).getType()==Case.MOULE){
+					trouveMoule = true;
+				}
+
+				postionTableau++;
+			}
+
+
+		}
+		msg = chemin[0];
+		return msg;
+	}
+
 
     public static void main(String[] args){
 	if(args.length!=3){
@@ -81,22 +218,16 @@ public class Client{
 		    //Pourquoi ? Aucune idée mais faut bien envoyer quelque chose au serveur alors pourquoi pas ?
 		    //A vous de faire mieux ici :-)
 
-			System.out.println(voisinGauche(laby, x, y));
 
-			int test = (int)(Math.random()*4);
 
-			if(test == 0){
-				msg="E";
-			}
-			else if (test == 1) {
-				msg="O";
-			}
-			else if (test == 2) {
-				msg="N";
-			}
-			else if (test == 3) {
-				msg="S";
-			}
+
+
+				msg = chemin();
+
+
+
+
+
 
 
 		    /*-----------------------------------------------------------------------*/
