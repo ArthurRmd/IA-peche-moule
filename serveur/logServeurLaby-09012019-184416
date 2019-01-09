@@ -1,0 +1,176 @@
+Création d'un labyrinthe de 25x17 dont les cases font 20 pixels.
+25x17/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-S-S-D-S-D-S-S-S-D-S-S-S-S-S-S-S-S-S-D-S-S-S-D-D-S-D-D-D-S-D-S-D-D-D-S-D-D-D-S-D-D-D-D-D-S-D-D-D-D-S-D-S-D-S-D-S-S-S-D-S-D-S-S-F-D-S-S-S-F-50-S-S-D-D-S-D-S-D-20-D-D-D-S-D-S-D-S-D-D-D-D-D-S-D-F-D-S-D-D-S-D-S-S-B-40-B-S-S-D-S-D-S-D-S-D-S-D-S-D-S-D-S-D-D-S-D-S-D-S-D-D-D-D-D-S-D-D-D-S-D-S-D-S-D-D-D-S-D-D-S-S-S-D-F-S-S-D-S-S-S-S-F-S-80-S-S-S-F-D-S-S-S-D-D-D-D-D-D-S-D-S-D-S-D-D-D-D-D-70-D-D-D-S-D-D-D-D-D-D-S-S-S-70-F-D-S-D-S-D-F-D-S-S-S-S-S-D-S-S-S-S-S-D-D-D-D-S-D-D-D-S-D-S-D-50-D-D-D-D-D-D-D-D-D-S-D-D-D-D-S-D-S-D-S-S-S-D-S-S-S-D-S-S-S-D-S-50-S-S-B-S-S-D-D-S-D-S-D-D-D-S-D-S-D-S-D-S-D-D-D-D-D-S-D-D-D-S-D-D-S-S-70-D-S-S-S-B-S-D-B-S-S-D-S-S-S-S-30-D-S-S-S-D-D-D-D-S-D-S-D-D-D-S-D-S-D-D-D-S-D-S-D-S-D-S-D-D-D-D-S-S-S-D-S-D-S-S-S-D-S-S-S-D-S-D-S-D-S-D-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 3427.
+Le placement des bonus porte le numéro 25222;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 50%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    09/01/2019 - 18:44:19                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:52469
+************************************************************
+09012019-184419 -  envoi du numéro de joueur au joueur 0
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184422 -  envoi des infos du labyrinthe au joueur 0
+09012019-184422 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184423 -  envoi des infos du labyrinthe au joueur 0
+09012019-184423 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184424 -  envoi des infos du labyrinthe au joueur 0
+09012019-184424 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184425 -  envoi des infos du labyrinthe au joueur 0
+09012019-184425 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184426 -  envoi des infos du labyrinthe au joueur 0
+09012019-184426 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184427 -  envoi des infos du labyrinthe au joueur 0
+09012019-184427 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-184428 -  envoi des infos du labyrinthe au joueur 0
+09012019-184428 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 

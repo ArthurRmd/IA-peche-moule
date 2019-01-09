@@ -9,6 +9,8 @@ import java.util.ListIterator;
 
 public class Client{
 
+	public static List tabPosX = new LinkedList();
+	public static List tabPosY = new LinkedList();
 
 	public static String voisinGauche(Labyrinthe laby , int x ,int y){
 		return laby.getXY(x-1,y).toString();
@@ -33,6 +35,181 @@ public class Client{
 		else if (test == 3) {
 			msg="S";
 		}
+
+		test +=1;
+		return msg;
+	}
+
+
+	public static String chemin3 (int x, int y, Labyrinthe laby){
+
+		List l = new LinkedList();
+		Position[] position = new Position[4];
+		position[0] = new Position(0,0);
+		position[1] = new Position(0,0);
+		position[2] = new Position(0,0);
+		position[3] = new Position(0,0);
+		int positionIndex = 0;
+
+		int i;
+		int j;
+
+		String msg="";
+
+		boolean deplaceNord;
+		boolean deplaceSud;
+		boolean deplaceOuest;
+		boolean deplaceEst;
+
+		int xx;
+		int yy;
+
+		Position Nord = new Position(x, y - 1, "N");
+		Position Sud = new Position(x, y + 1, "S");
+		Position Ouest = new Position(x - 1, y,  "O");
+		Position Est = new Position(x + 1, y, "E");
+
+
+		deplaceNord = laby.marchable(x, y - 1);
+		deplaceSud = laby.marchable(x, y + 1);
+		deplaceOuest = laby.marchable(x - 1, y);
+		deplaceEst = laby.marchable(x + 1, y);
+
+
+
+		String deplacement = "";
+		if (deplaceNord) {
+			l.add("N");
+			position[positionIndex].setX(Nord.getX());
+			position[positionIndex].setY(Nord.getY());
+			position[positionIndex].setDirection("N");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+		if (deplaceSud) {
+			l.add("S");
+			position[positionIndex].setX(Sud.getX());
+			position[positionIndex].setY(Sud.getY());
+			position[positionIndex].setDirection("S");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+		if (deplaceOuest) {
+			l.add("O");
+			position[positionIndex].setX(Ouest.getX());
+			position[positionIndex].setY(Ouest.getY());
+			position[positionIndex].setDirection("O");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+		if (deplaceEst) {
+			l.add("E");
+			position[positionIndex].setX(Est.getX());
+			position[positionIndex].setY(Est.getY());
+			position[positionIndex].setDirection("E");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+
+
+
+		System.out.println("Voici l'historique : ");
+		for ( i=0; i<tabPosX.size(); i++){
+
+			System.out.print(" ("+tabPosX.get(i)+",");
+			System.out.print(tabPosY.get(i)+") ");
+
+		}
+		System.out.println("\nLa taile de tabPosX est : " + tabPosX.size());
+
+
+
+
+
+		int positionIndex2 = positionIndex;
+
+
+		if (positionIndex > 1 &&  (tabPosX.size() !=0) ){
+
+			i=(tabPosX.size() -1 );
+			while (i >= 0 && positionIndex2>1 ) {
+				xx = (int) tabPosX.get(i);
+				yy = (int) tabPosY.get(i);
+
+				j=0;
+				while (j < positionIndex){
+
+					if (position[j].getX() == xx && position[j].getY()==yy){
+						position[j].setX(0);
+						position[j].setY(0);
+						position[j].setValide(false);
+						position[j].setDirection("");
+						positionIndex2--;
+					}
+
+
+					j++;
+				}
+
+				i--;
+
+			}
+
+		}
+
+
+
+
+		System.out.println("\n Les 4 positions sont : ");
+		System.out.println(position[0].toString());
+		System.out.println(position[1].toString());
+		System.out.println(position[2].toString());
+		System.out.println(position[3].toString());
+
+
+
+
+		int nbAleatoire = (int) (Math.random() * l.size());
+
+		msg = String.valueOf(l.get(nbAleatoire));
+
+
+
+		if (position[0].getValide()){
+			msg= position[0].getDirection();
+		}
+		else if (position[1].getValide()){
+			msg= position[1].getDirection();
+		}
+		else if (position[2].getValide()){
+			msg= position[2].getDirection();
+		}
+		else {
+			msg= position[3].getDirection();
+		}
+
+
+
+
+
+
+		if (msg=="N"){
+			tabPosX.add(Nord.getX());
+			tabPosY.add(Nord.getY());
+		}
+		else if (msg=="S"){
+			tabPosX.add(Sud.getX());
+			tabPosY.add(Sud.getY());
+		}
+		else if (msg=="O"){
+			tabPosX.add(Ouest.getX());
+			tabPosY.add(Ouest.getY());
+		}
+		else {
+			tabPosX.add(Est.getX());
+			tabPosY.add(Est.getY());
+		}
+
 
 
 		return msg;
@@ -90,17 +267,20 @@ public class Client{
 		String deplacement ="";
 		String positionJoueur = "";
 		boolean fin = false;
+		int nombreBoucle= 0;
 
 
 		boolean trouveMoule = false;
 
 
 
-		while (trouveMoule) {
+		while (!trouveMoule) {
+
+
 
 			postionTableau = 0;
-			while (postionTableau < 50 && !culDeSac(laby, x,y, positionJoueur) && !fin) {
-
+			while (postionTableau < 100 && !culDeSac(laby, x,y, positionJoueur) && !fin) {
+				System.out.println("Ca tourne" + postionTableau);
 
 				deplaceNord = laby.marchable(x, y - 1);
 				deplaceSud = laby.marchable(x, y + 1);
@@ -147,7 +327,7 @@ public class Client{
 				postionTableau++;
 			}
 
-
+			nombreBoucle++;
 		}
 		msg = chemin[0];
 		return msg;
@@ -228,8 +408,10 @@ public class Client{
 
 
 
+				msg = chemin3( x,y, laby);
+				//msg = chemin();
 
-				msg = chemin2(laby, x,y);
+
 
 
 

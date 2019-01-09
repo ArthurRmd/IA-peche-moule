@@ -1,0 +1,129 @@
+Création d'un labyrinthe de 25x17 dont les cases font 20 pixels.
+25x17/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-S-D-S-D-S-D-S-S-S-S-S-S-S-D-S-S-S-D-S-S-S-D-D-S-D-S-D-S-D-S-D-D-D-S-D-D-D-S-D-D-D-S-D-D-D-S-D-D-S-D-S-S-S-40-S-D-S-S-B-D-S-S-S-20-S-S-F-S-S-S-S-D-D-S-D-S-D-S-D-D-D-D-D-S-D-D-D-S-D-D-D-F-D-40-D-S-D-D-S-S-S-D-S-S-S-S-S-S-S-D-S-S-S-S-S-D-60-D-S-D-S-D-D-S-D-D-D-D-D-D-D-S-D-S-D-D-D-F-D-D-D-S-D-B-D-D-D-D-S-D-S-D-S-S-S-D-S-D-S-D-S-S-S-D-S-D-S-D-S-S-S-D-D-S-D-S-D-S-D-20-D-D-D-F-D-D-D-D-D-60-D-D-D-D-D-S-D-D-S-S-S-D-S-D-S-S-S-S-F-S-S-D-S-D-S-S-S-S-S-S-S-D-D-D-D-D-D-S-D-D-D-D-D-D-D-S-D-S-D-D-D-D-D-S-D-D-D-D-S-S-S-S-S-S-S-D-S-D-10-D-S-D-B-S-S-20-S-S-S-S-S-D-D-D-D-S-D-D-D-D-D-F-D-F-D-B-D-D-D-D-D-D-D-F-D-S-D-D-S-S-S-90-S-D-S-S-S-B-S-S-S-S-S-10-S-D-S-S-S-D-S-D-D-S-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-D-D-D-D-S-D-D-D-D-S-S-S-S-S-D-S-S-S-S-S-S-S-S-S-D-S-S-S-S-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 27040.
+Le placement des bonus porte le numéro 49680;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 50%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    09/01/2019 - 19:45:30                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:57573
+************************************************************
+09012019-194530 -  envoi du numéro de joueur au joueur 0
+09012019-194533 -  envoi des infos du labyrinthe au joueur 0
+09012019-194533 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194533 -  envoi des infos du labyrinthe au joueur 0
+09012019-194534 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194534 -  envoi des infos du labyrinthe au joueur 0
+09012019-194535 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194535 -  envoi des infos du labyrinthe au joueur 0
+09012019-194537 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194537 -  envoi des infos du labyrinthe au joueur 0
+09012019-194537 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194537 -  envoi des infos du labyrinthe au joueur 0
+09012019-194538 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194538 -  envoi des infos du labyrinthe au joueur 0
+09012019-194540 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194540 -  envoi des infos du labyrinthe au joueur 0
+09012019-194541 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194542 -  envoi des infos du labyrinthe au joueur 0
+09012019-194543 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194543 -  envoi des infos du labyrinthe au joueur 0
+09012019-194545 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194545 -  envoi des infos du labyrinthe au joueur 0
+09012019-194546 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194546 -  envoi des infos du labyrinthe au joueur 0
+09012019-194548 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194548 -  envoi des infos du labyrinthe au joueur 0
+09012019-194549 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194549 -  envoi des infos du labyrinthe au joueur 0
+09012019-194551 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194551 -  envoi des infos du labyrinthe au joueur 0
+09012019-194552 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194552 -  envoi des infos du labyrinthe au joueur 0
+09012019-194554 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194554 -  envoi des infos du labyrinthe au joueur 0
+09012019-194555 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194555 -  envoi des infos du labyrinthe au joueur 0
+09012019-194557 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194557 -  envoi des infos du labyrinthe au joueur 0
+09012019-194558 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194559 -  envoi des infos du labyrinthe au joueur 0
+09012019-194600 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194600 -  envoi des infos du labyrinthe au joueur 0
+09012019-194602 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194602 -  envoi des infos du labyrinthe au joueur 0
+09012019-194603 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194603 -  envoi des infos du labyrinthe au joueur 0
+09012019-194605 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194605 -  envoi des infos du labyrinthe au joueur 0
+09012019-194606 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194606 -  envoi des infos du labyrinthe au joueur 0
+09012019-194608 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194608 -  envoi des infos du labyrinthe au joueur 0
+09012019-194609 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194609 -  envoi des infos du labyrinthe au joueur 0
+09012019-194611 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194611 -  envoi des infos du labyrinthe au joueur 0
+09012019-194612 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194613 -  envoi des infos du labyrinthe au joueur 0
+09012019-194614 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194614 -  envoi des infos du labyrinthe au joueur 0
+09012019-194616 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194616 -  envoi des infos du labyrinthe au joueur 0
+09012019-194617 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194617 -  envoi des infos du labyrinthe au joueur 0
+09012019-194619 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194619 -  envoi des infos du labyrinthe au joueur 0
+09012019-194620 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194620 -  envoi des infos du labyrinthe au joueur 0
+09012019-194622 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194622 -  envoi des infos du labyrinthe au joueur 0
+09012019-194622 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194622 -  envoi des infos du labyrinthe au joueur 0
+09012019-194623 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194624 -  envoi des infos du labyrinthe au joueur 0
+09012019-194624 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194624 -  envoi des infos du labyrinthe au joueur 0
+09012019-194625 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-194625 -  envoi des infos du labyrinthe au joueur 0

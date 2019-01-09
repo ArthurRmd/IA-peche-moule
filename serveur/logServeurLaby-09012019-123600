@@ -1,0 +1,701 @@
+Création d'un labyrinthe de 25x17 dont les cases font 20 pixels.
+25x17/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-S-S-S-D-S-S-S-S-S-S-S-S-S-S-S-D-S-S-S-S-S-D-D-S-D-S-D-D-D-S-D-D-D-S-D-D-D-S-D-D-D-D-D-S-D-D-D-D-S-S-S-S-S-F-S-D-F-D-S-D-S-S-S-D-B-80-S-S-S-S-S-D-D-S-D-D-D-S-D-D-D-60-D-S-D-S-D-D-D-S-D-D-D-D-D-S-D-D-S-S-F-D-S-S-S-S-S-D-S-D-S-S-S-S-S-D-S-S-F-D-S-D-D-D-D-S-D-D-D-D-D-D-D-S-D-D-D-S-D-D-D-S-D-D-D-D-D-D-S-S-S-D-S-S-S-D-S-90-S-S-S-D-S-70-S-B-S-S-10-S-S-D-D-D-D-D-D-D-D-S-D-D-D-D-D-S-D-D-D-D-D-F-D-D-D-D-D-D-S-S-S-D-S-S-F-D-S-S-S-S-S-D-S-F-S-S-S-S-S-S-S-D-D-S-D-S-D-D-D-S-D-S-D-D-D-D-D-D-D-D-D-D-D-S-D-D-D-D-S-D-S-S-S-S-S-D-B-S-50-D-S-D-S-D-B-D-S-S-S-S-S-D-D-S-D-D-D-D-D-D-D-D-D-S-D-S-D-S-D-S-D-60-D-D-D-D-D-D-S-S-S-S-S-S-S-S-S-F-S-D-80-S-40-90-S-B-S-S-S-S-S-D-D-S-D-D-D-S-D-D-D-D-D-S-D-S-D-D-D-D-D-S-D-D-D-S-D-D-S-D-S-S-S-S-S-D-S-S-S-D-S-D-S-S-S-S-S-D-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 32721.
+Le placement des bonus porte le numéro 22970;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 50%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    09/01/2019 - 12:36:04                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:64456
+************************************************************
+09012019-123604 -  envoi du numéro de joueur au joueur 0
+09012019-123607 -  envoi des infos du labyrinthe au joueur 0
+09012019-123607 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123607 -  envoi des infos du labyrinthe au joueur 0
+09012019-123607 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123608 -  envoi des infos du labyrinthe au joueur 0
+09012019-123608 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123609 -  envoi des infos du labyrinthe au joueur 0
+09012019-123609 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123610 -  envoi des infos du labyrinthe au joueur 0
+09012019-123610 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123611 -  envoi des infos du labyrinthe au joueur 0
+09012019-123611 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123612 -  envoi des infos du labyrinthe au joueur 0
+09012019-123612 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123613 -  envoi des infos du labyrinthe au joueur 0
+09012019-123613 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123614 -  envoi des infos du labyrinthe au joueur 0
+09012019-123614 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123615 -  envoi des infos du labyrinthe au joueur 0
+09012019-123615 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123616 -  envoi des infos du labyrinthe au joueur 0
+09012019-123616 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123617 -  envoi des infos du labyrinthe au joueur 0
+09012019-123617 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123618 -  envoi des infos du labyrinthe au joueur 0
+09012019-123618 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123619 -  envoi des infos du labyrinthe au joueur 0
+09012019-123619 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123620 -  envoi des infos du labyrinthe au joueur 0
+09012019-123620 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123621 -  envoi des infos du labyrinthe au joueur 0
+09012019-123621 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123622 -  envoi des infos du labyrinthe au joueur 0
+09012019-123622 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123623 -  envoi des infos du labyrinthe au joueur 0
+09012019-123623 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123624 -  envoi des infos du labyrinthe au joueur 0
+09012019-123624 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123625 -  envoi des infos du labyrinthe au joueur 0
+09012019-123625 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123626 -  envoi des infos du labyrinthe au joueur 0
+09012019-123626 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123627 -  envoi des infos du labyrinthe au joueur 0
+09012019-123627 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123628 -  envoi des infos du labyrinthe au joueur 0
+09012019-123628 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123629 -  envoi des infos du labyrinthe au joueur 0
+09012019-123629 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123630 -  envoi des infos du labyrinthe au joueur 0
+09012019-123630 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123631 -  envoi des infos du labyrinthe au joueur 0
+09012019-123631 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123632 -  envoi des infos du labyrinthe au joueur 0
+09012019-123632 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123633 -  envoi des infos du labyrinthe au joueur 0
+09012019-123633 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123634 -  envoi des infos du labyrinthe au joueur 0
+09012019-123634 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123635 -  envoi des infos du labyrinthe au joueur 0
+09012019-123635 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123635 -  envoi des infos du labyrinthe au joueur 0
+09012019-123635 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123635 -  envoi des infos du labyrinthe au joueur 0
+09012019-123635 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123635 -  envoi des infos du labyrinthe au joueur 0
+09012019-123635 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123635 -  envoi des infos du labyrinthe au joueur 0
+09012019-123635 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123636 -  envoi des infos du labyrinthe au joueur 0
+09012019-123636 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123636 -  envoi des infos du labyrinthe au joueur 0
+09012019-123636 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+09012019-123636 -  envoi des infos du labyrinthe au joueur 0
+09012019-123636 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
