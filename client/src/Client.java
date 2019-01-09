@@ -57,16 +57,17 @@ public class Client{
 		}
 		else if ( direction == "O"){
 
-			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
+			if (laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
 				culDeSac = true;
 			}
 		}
 		else if ( direction == "E"){
 
-			if (laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
+			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
 				culDeSac = true;
 			}
 		}
+
 
 
 
@@ -87,7 +88,8 @@ public class Client{
 		boolean deplaceOuest;
 		boolean deplaceEst;
 		String deplacement ="";
-		Case positionJoueur = new Case(x,y);
+		String positionJoueur = "";
+		boolean fin = false;
 
 
 		boolean trouveMoule = false;
@@ -97,13 +99,13 @@ public class Client{
 		while (trouveMoule) {
 
 			postionTableau = 0;
-			while (postionTableau < 50 && !culDeSac(laby, x,y, pos) ) {
+			while (postionTableau < 50 && !culDeSac(laby, x,y, positionJoueur) && !fin) {
 
 
 				deplaceNord = laby.marchable(x, y - 1);
 				deplaceSud = laby.marchable(x, y + 1);
-				deplaceOuest = laby.marchable(x + 1, y);
-				deplaceEst = laby.marchable(x - 1, y);
+				deplaceOuest = laby.marchable(x - 1, y);
+				deplaceEst = laby.marchable(x + 1, y);
 
 				if (deplaceNord) {
 					l.add("N");
@@ -125,16 +127,21 @@ public class Client{
 
 				if (deplacement == "N") {
 					x++;
+					positionJoueur = "S";
 				} else if (deplacement == "S") {
 					x--;
+					positionJoueur = "N";
 				} else if (deplacement == "O") {
-					y++;
-				} else {
 					y--;
+					positionJoueur = "E";
+				} else {
+					y++;
+					positionJoueur = "O";
 				}
 
 				if(laby.getXY(x,y).getType()==Case.MOULE){
 					trouveMoule = true;
+					fin = true;
 				}
 
 				postionTableau++;
@@ -222,7 +229,7 @@ public class Client{
 
 
 
-				msg = chemin();
+				msg = chemin2(laby, x,y);
 
 
 
