@@ -1,0 +1,102 @@
+Création d'un labyrinthe de 25x17 dont les cases font 20 pixels.
+25x17/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-S-S-S-D-S-S-S-S-S-D-S-D-S-S-S-S-S-S-S-S-S-D-D-S-D-D-D-S-D-D-D-S-D-S-D-S-D-S-D-S-D-S-D-D-D-D-D-D-S-S-20-D-S-S-S-F-S-D-S-70-S-B-S-D-S-D-S-D-S-D-S-D-D-D-D-S-D-S-D-D-D-D-D-D-D-D-D-D-D-D-D-70-D-S-D-S-D-D-S-D-F-D-B-S-S-D-S-S-S-D-50-S-S-S-S-S-S-F-90-S-S-D-D-S-D-S-D-D-D-D-D-S-D-D-D-S-D-D-D-D-D-D-D-D-D-D-D-D-S-S-S-F-S-S-10-S-S-20-S-D-S-S-S-S-S-F-S-F-S-S-S-D-D-D-D-B-D-D-D-S-D-S-D-S-D-S-D-D-D-S-D-S-D-S-D-S-D-D-S-D-S-D-S-S-B-D-S-D-30-S-S-D-S-S-S-D-S-D-B-D-S-D-D-S-D-D-D-S-D-S-D-D-D-60-D-D-D-D-D-S-D-D-D-S-D-D-D-D-S-S-S-D-S-D-F-S-S-D-S-S-S-D-S-S-S-D-S-D-S-S-S-D-D-S-D-D-D-D-D-S-D-S-D-D-D-D-D-D-D-D-D-S-D-D-D-S-D-D-S-S-S-S-60-D-S-D-S-S-S-D-S-S-S-D-S-S-S-F-S-S-S-D-D-S-D-S-D-D-D-S-D-D-D-S-D-D-D-S-D-D-D-S-D-D-D-D-D-D-S-D-S-S-S-S-S-S-S-D-S-D-S-S-S-S-S-S-S-S-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 39874.
+Le placement des bonus porte le numéro 21990;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 50%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    07/01/2019 - 14:07:33                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:50888
+************************************************************
+07012019-140733 -  envoi du numéro de joueur au joueur 0
+07012019-140735 -  envoi des infos du labyrinthe au joueur 0
+07012019-140735 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140735 -  envoi des infos du labyrinthe au joueur 0
+07012019-140735 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140735 -  envoi des infos du labyrinthe au joueur 0
+07012019-140735 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140735 -  envoi des infos du labyrinthe au joueur 0
+07012019-140735 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140735 -  envoi des infos du labyrinthe au joueur 0
+07012019-140735 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140735 -  envoi des infos du labyrinthe au joueur 0
+07012019-140735 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140736 -  envoi des infos du labyrinthe au joueur 0
+07012019-140736 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140737 -  envoi des infos du labyrinthe au joueur 0
+07012019-140737 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140738 -  envoi des infos du labyrinthe au joueur 0
+07012019-140738 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140738 -  envoi des infos du labyrinthe au joueur 0
+07012019-140738 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140738 -  envoi des infos du labyrinthe au joueur 0
+07012019-140738 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+07012019-140738 -  envoi des infos du labyrinthe au joueur 0
+07012019-140738 - réception du message "C" de la part du joueur 0
+Retour de l'exécution de la commande : 
+Tous les participants ont passé ou sont déconnectés
+Fin de partie en 27 tours. Quelques moules se sont échappées.
+07012019-140738 -  envoi de la fin de partie au joueur 0
+---------------------------
+Joueur J0 en (3,3) a 20 points et possède 0 bière et 0 frite
+---------------------------
+07012019-140738 -  VAINQUEUR : J0 avec 20 points

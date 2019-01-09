@@ -164,11 +164,11 @@ class Labyrinthe{
 
 	ramasseEtMAJ(nbJoueur);
     }
-
+*/
     public boolean marchable(int x, int y){
 	return !(getXY(x,y).getType()==Case.DUNE);
     }
-
+/*
     public void placerBonus(int typeCase){
 	// méthode qui utilise randPlacementBonus instancié dans les constructeurs
 	

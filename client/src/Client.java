@@ -4,7 +4,12 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class Client{
-	
+
+
+	public static String voisinGauche(Labyrinthe laby , int x ,int y){
+		return laby.getXY(x-1,y).toString();
+	}
+
     public static void main(String[] args){
 	if(args.length!=3){
 	    System.out.println("Il faut 3 arguments : l'adresse ip du serveur, le port et le nom d'équipe.");
@@ -50,7 +55,15 @@ public class Client{
 		    //Faut pas trop en demander non plus !
 		    Labyrinthe laby = new Labyrinthe(msg);
 
-		    //Informations sur le joueur
+		    System.out.println(msg);
+
+		    System.out.println("voici le get XY : " + laby.getXY(1,1));
+
+		    int x = laby.getJoueur(Integer.parseInt(numJoueur)).getPosX();
+			int y  = laby.getJoueur(Integer.parseInt(numJoueur)).getPosY();
+
+
+			//Informations sur le joueur
 		    System.out.println("Je me trouve en : ("+laby.getJoueur(Integer.parseInt(numJoueur)).getPosX()+","+laby.getJoueur(Integer.parseInt(numJoueur)).getPosY()+")");
 		    ArrayList<Integer> infosMoule = new ArrayList<Integer>();
 		    //Parcours du plateau pour trouver toutes les moules et leur valeur
@@ -67,7 +80,24 @@ public class Client{
 		    //Je prépare le message suivant à envoyer au serveur : je vais me déplacer vers l'Est.
 		    //Pourquoi ? Aucune idée mais faut bien envoyer quelque chose au serveur alors pourquoi pas ?
 		    //A vous de faire mieux ici :-)
-		    msg="E";
+
+			System.out.println(voisinGauche(laby, x, y));
+
+			int test = (int)(Math.random()*4);
+
+			if(test == 0){
+				msg="E";
+			}
+			else if (test == 1) {
+				msg="O";
+			}
+			else if (test == 2) {
+				msg="N";
+			}
+			else if (test == 3) {
+				msg="S";
+			}
+
 
 		    /*-----------------------------------------------------------------------*/
 		    
@@ -84,5 +114,8 @@ public class Client{
 	    e.printStackTrace();
 	}
     }
+
+
+
 	
 }
