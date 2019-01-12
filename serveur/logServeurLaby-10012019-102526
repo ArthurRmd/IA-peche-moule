@@ -1,0 +1,45 @@
+Création d'un labyrinthe de 25x25 dont les cases font 20 pixels.
+25x25/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-S-D-S-S-S-S-S-S-S-S-S-S-S-D-S-D-S-S-S-S-S-D-D-S-D-S-D-S-D-D-D-D-D-S-D-S-D-S-D-S-D-D-D-S-D-D-D-D-S-D-S-S-S-S-S-S-S-D-S-D-S-D-S-D-S-30-60-S-S-S-S-D-D-S-D-S-D-D-D-D-D-F-D-S-D-D-D-D-D-D-D-D-D-S-D-S-D-D-S-S-S-S-S-D-S-D-S-D-S-B-S-S-S-D-S-D-S-S-B-D-S-D-D-D-D-D-D-S-D-S-D-F-D-D-D-D-D-S-D-S-D-D-D-D-D-S-D-D-S-D-S-D-S-S-S-D-S-S-S-S-10-D-S-D-S-B-S-D-S-D-S-D-D-S-D-S-D-D-D-D-D-D-D-70-D-D-D-D-D-S-D-S-D-S-D-S-D-D-S-S-B-D-S-S-S-S-S-S-S-S-S-D-S-S-S-D-80-S-S-S-S-D-D-S-D-D-D-S-D-D-D-S-D-S-D-D-D-D-D-S-D-D-D-70-D-D-D-D-S-S-S-S-S-S-S-D-S-D-S-S-S-30-S-D-S-D-S-S-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-D-D-D-D-D-D-S-D-D-D-D-S-S-S-D-S-S-S-B-S-S-S-D-S-D-S-D-S-S-S-D-S-S-S-D-D-S-D-S-D-S-D-S-D-D-D-F-D-S-D-S-D-D-D-S-D-S-D-D-D-D-S-D-S-D-S-D-S-D-S-S-F-D-S-S-S-S-S-S-S-D-S-D-S-D-D-D-D-S-D-D-D-F-D-D-D-D-D-S-D-D-D-S-D-D-D-90-D-S-D-D-S-D-S-S-S-D-S-D-S-F-S-D-S-D-S-D-S-50-S-S-S-S-S-D-D-S-D-S-D-D-D-S-D-S-D-D-D-D-D-S-D-D-D-D-D-F-D-D-D-D-S-S-S-S-S-D-S-D-S-S-S-S-S-S-S-S-S-S-S-D-S-S-S-D-D-D-D-S-D-S-D-40-D-D-D-S-D-D-D-D-D-S-D-D-D-S-D-S-D-D-S-S-S-D-S-S-S-D-S-S-S-S-S-F-S-D-S-D-S-D-S-D-S-D-D-D-D-D-D-D-D-S-D-S-D-S-D-D-D-S-D-S-D-S-D-S-D-D-D-D-S-S-S-S-S-S-S-S-S-D-S-D-S-S-S-D-S-S-S-S-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 14333.
+Le placement des bonus porte le numéro 35563;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 50%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    10/01/2019 - 10:25:29                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:54139
+************************************************************
+10012019-102529 -  envoi du numéro de joueur au joueur 0
+10012019-102533 -  envoi des infos du labyrinthe au joueur 0
+10012019-102533 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102533 -  envoi des infos du labyrinthe au joueur 0
+10012019-102533 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102533 -  envoi des infos du labyrinthe au joueur 0
+10012019-102533 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102533 -  envoi des infos du labyrinthe au joueur 0
+10012019-102533 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102534 -  envoi des infos du labyrinthe au joueur 0
+10012019-102534 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102534 -  envoi des infos du labyrinthe au joueur 0
+10012019-102534 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102534 -  envoi des infos du labyrinthe au joueur 0
+10012019-102534 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+10012019-102534 -  envoi des infos du labyrinthe au joueur 0
+10012019-102534 - réception du message "C" de la part du joueur 0
+Retour de l'exécution de la commande : 
+Tous les participants ont passé ou sont déconnectés
+Fin de partie en 8 tours. Quelques moules se sont échappées.
+10012019-102534 -  envoi de la fin de partie au joueur 0
+---------------------------
+Joueur J0 en (2,5) a 0 point et possède 0 bière et 0 frite
+---------------------------
+10012019-102534 -  VAINQUEUR : J0 avec 0 points

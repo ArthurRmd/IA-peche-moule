@@ -110,6 +110,13 @@ class Labyrinthe{
 	return tableau[y*tailleX+x];
     }
 
+    public void setXY(int x, int y){
+		tableau[y*tailleX+x].setType(Case.DUNE);
+
+	}
+
+
+
     public int getNbJoueur(){
 	return listeJoueur.size();
     }

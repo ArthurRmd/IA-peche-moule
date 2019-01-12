@@ -41,6 +41,76 @@ public class Client{
 	}
 
 
+	public static void transformLaby (Labyrinthe laby , int x, int y) {
+
+		int tailleX = laby.getTailleX() - 1; // 24
+		int tailleY = laby.getTailleY() - 1;
+		int nbDune;
+
+		boolean duneNord = false;
+		boolean duneSud = false;
+		boolean duneOuest = false;
+		boolean duneEst = false;
+		boolean test;
+
+		for (int i = 1; i <= tailleX - 1; i++) {
+
+			for (int j = 1; j <= tailleY - 1; j++) {
+
+
+				duneNord = false;
+				duneSud = false;
+				duneOuest = false;
+				duneEst = false;
+
+
+				nbDune = 0;
+
+				if (x == i && y == j) {
+					test = true;
+				} else {
+					test = false;
+				}
+
+
+				if (!test && (laby.getXY(i, j).getType() == Case.SABLE || laby.getXY(i, j).getType() == Case.FRITE || laby.getXY(i, j).getType() == Case.BIERE)) {
+
+
+					if (laby.getXY(i, j - 1).getType() == Case.DUNE) {
+						duneNord = true;
+						nbDune++;
+					}
+					if (laby.getXY(i, j + 1).getType() == Case.DUNE) {
+						duneSud = true;
+						nbDune++;
+					}
+					if (laby.getXY(i - 1, j).getType() == Case.DUNE) {
+						duneEst = true;
+						nbDune++;
+					}
+					if (laby.getXY(i + 1, j).getType() == Case.DUNE) {
+						duneOuest = true;
+						nbDune++;
+					}
+
+
+					if (nbDune == 3) {
+						laby.setXY(i, j);
+
+					}
+
+				}
+
+
+
+
+
+			}
+		}
+
+	}
+
+
 	public static String chemin3 (int x, int y, Labyrinthe laby){
 
 		List l = new LinkedList();
@@ -379,12 +449,48 @@ public class Client{
 		    //Faut pas trop en demander non plus !
 		    Labyrinthe laby = new Labyrinthe(msg);
 
+			int x = laby.getJoueur(Integer.parseInt(numJoueur)).getPosX();
+			int y  = laby.getJoueur(Integer.parseInt(numJoueur)).getPosY();
+
+			System.out.println("Le joueur se situe a " + x + "  " + y);
+
+			System.out.println(laby.toStringLaby());
+
+			for (int i=0 ; i<100; i++) {
+				transformLaby(laby, x, y);
+			}
+			msg = chemin3( x,y, laby);
+
+			//transformLaby(laby, x, y );
+			//transformLaby(laby, x, y );
+
+
+
+			System.out.println("**********\n\n La taille du tableau est : " + laby.getTailleX());
+
+
+
+
 		    System.out.println(msg);
 
-		    System.out.println("voici le get XY : " + laby.getXY(1,1));
+		    /*
+		  	laby.setXY(23,10);
+			laby.setXY(23,9);
+			laby.setXY(23,7);
+			laby.setXY(23,6);
+			laby.setXY(23,5);
+			laby.setXY(23,4);
+			laby.setXY(23,3);
+			laby.setXY(23,2);
+			laby.setXY(23,1);
+*/
 
-		    int x = laby.getJoueur(Integer.parseInt(numJoueur)).getPosX();
-			int y  = laby.getJoueur(Integer.parseInt(numJoueur)).getPosY();
+			System.out.println(laby.toStringLaby());
+
+
+
+			System.out.println("voici le get XY : " + laby.getXY(1,1));
+
 
 
 			//Informations sur le joueur
@@ -408,7 +514,6 @@ public class Client{
 
 
 
-				msg = chemin3( x,y, laby);
 				//msg = chemin();
 
 

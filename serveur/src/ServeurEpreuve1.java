@@ -11,9 +11,9 @@ import java.awt.Font;
 
 class ServeurEpreuve1{
 
-    public static int tailleCase=25;
-    public static int tailleX=25;
-    public static int tailleY=17;
+    public static int tailleCase=45;
+    public static int tailleX=23;
+    public static int tailleY=21;
     public static boolean screen=false;
     public static int tour=0;
     public static Labyrinthe la=null;
