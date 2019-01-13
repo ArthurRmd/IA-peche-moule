@@ -1,0 +1,39 @@
+Création d'un labyrinthe de 23x21 dont les cases font 45 pixels.
+23x21/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-S-S-S-S-D-S-S-S-S-S-S-S-S-S-S-S-D-S-S-S-D-D-S-D-D-D-S-D-D-D-S-D-D-D-S-D-S-D-D-S-S-D-S-D-D-S-S-S-D-S-S-S-S-S-S-B-D-S-D-S-D-S-S-F-D-S-D-D-D-D-D-D-D-S-D-D-D-D-S-D-S-D-80-D-S-D-S-D-D-D-D-S-S-S-S-30-D-S-S-S-S-80-S-S-D-S-B-S-D-S-S-S-D-D-S-D-S-D-D-D-D-D-D-S-S-D-S-D-S-90-70-D-D-D-S-D-D-S-D-S-S-B-D-S-S-S-D-S-S-50-D-F-D-S-50-S-D-S-D-D-D-D-S-D-D-S-S-D-S-D-S-D-D-D-S-D-D-D-S-D-S-D-D-S-D-S-S-S-S-S-D-S-B-S-D-S-20-S-S-S-S-S-D-S-D-D-S-S-D-D-S-D-D-D-D-D-D-D-D-D-F-D-D-D-S-D-D-D-D-S-D-S-F-S-S-S-S-90-D-F-D-S-S-S-S-S-S-F-D-S-D-D-S-S-D-D-S-D-S-D-S-D-S-S-D-D-S-D-D-D-D-D-S-D-D-S-D-S-D-S-S-S-S-S-D-S-S-S-S-S-S-S-S-S-S-S-D-D-S-D-S-S-D-D-S-D-S-D-D-D-D-S-S-D-D-D-S-D-S-D-D-S-S-S-S-S-S-S-D-S-F-S-S-B-S-S-S-S-S-S-D-S-D-D-S-S-D-D-D-D-S-D-D-D-D-D-D-D-S-D-D-D-S-D-S-D-D-S-D-S-S-S-D-F-S-S-D-S-S-S-S-30-S-S-D-S-S-S-D-D-D-D-D-D-S-D-S-D-D-D-S-D-S-D-S-D-D-S-D-D-S-D-D-S-S-S-S-S-S-S-D-S-S-S-D-S-D-S-S-S-D-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 54531.
+Le placement des bonus porte le numéro 29386;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 40%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    13/01/2019 - 00:59:56                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:55814
+************************************************************
+13012019-005956 -  envoi du numéro de joueur au joueur 0
+13012019-010000 -  envoi des infos du labyrinthe au joueur 0
+13012019-010000 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-010000 -  envoi des infos du labyrinthe au joueur 0
+13012019-010000 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-010001 -  envoi des infos du labyrinthe au joueur 0
+13012019-010001 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-010001 -  envoi des infos du labyrinthe au joueur 0
+13012019-010001 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-010001 -  envoi des infos du labyrinthe au joueur 0
+13012019-010001 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-010001 -  envoi des infos du labyrinthe au joueur 0
+13012019-010001 - réception du message "C" de la part du joueur 0
+Retour de l'exécution de la commande : 
+Tous les participants ont passé ou sont déconnectés
+Fin de partie en 6 tours. Quelques moules se sont échappées.
+13012019-010001 -  envoi de la fin de partie au joueur 0
+---------------------------
+Joueur J0 en (5,2) a 0 point et possède 0 bière et 0 frite
+---------------------------
+13012019-010001 -  VAINQUEUR : J0 avec 0 points

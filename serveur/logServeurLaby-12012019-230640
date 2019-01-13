@@ -1,0 +1,81 @@
+Création d'un labyrinthe de 23x21 dont les cases font 45 pixels.
+23x21/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-S-S-S-S-S-S-S-S-S-D-S-D-S-S-S-S-S-S-S-D-D-S-D-D-D-D-D-S-D-S-D-D-D-S-D-S-D-S-D-D-D-D-D-D-S-S-S-D-S-F-S-D-S-D-F-S-S-S-F-D-S-S-S-D-S-D-D-S-D-D-D-D-D-S-D-D-D-S-D-D-D-D-D-S-D-S-D-S-D-D-S-D-S-D-S-S-S-F-S-D-B-D-S-S-S-S-50-D-S-S-S-D-D-S-D-S-D-D-D-S-D-D-D-D-D-S-D-D-D-S-D-D-D-S-D-D-S-S-S-S-S-S-S-D-40-D-S-S-S-D-S-30-S-D-S-D-S-D-D-D-D-D-D-D-D-S-D-S-D-D-D-S-D-S-D-D-D-S-D-S-D-D-S-D-S-S-S-S-S-D-S-F-S-S-S-D-S-D-S-70-S-S-S-D-D-S-D-D-D-80-D-S-D-D-D-D-D-F-D-D-D-D-D-D-D-S-D-D-S-S-S-D-50-D-S-S-S-D-S-S-S-D-80-D-S-D-10-D-S-D-D-S-D-S-D-S-D-D-D-S-D-S-D-S-D-S-D-S-D-F-D-S-D-D-S-D-S-S-S-S-S-D-S-S-S-D-S-S-S-S-S-D-S-D-S-D-D-S-D-S-D-S-D-S-D-S-D-S-D-D-D-D-D-D-D-S-D-D-D-D-S-D-S-D-S-D-S-D-S-D-S-D-S-S-F-D-S-S-S-S-S-D-D-S-D-D-D-D-D-D-D-D-D-S-D-B-D-D-D-S-D-D-D-D-D-D-S-S-S-S-80-S-S-D-S-S-S-60-S-D-B-S-B-S-B-S-S-D-D-D-D-S-D-S-D-D-D-D-D-D-D-D-D-S-D-D-D-D-D-S-D-D-S-S-S-D-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-D-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 58993.
+Le placement des bonus porte le numéro 25084;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 50%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    12/01/2019 - 23:06:42                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:62503
+************************************************************
+12012019-230642 -  envoi du numéro de joueur au joueur 0
+12012019-230646 -  envoi des infos du labyrinthe au joueur 0
+12012019-230648 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230648 -  envoi des infos du labyrinthe au joueur 0
+12012019-230650 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230650 -  envoi des infos du labyrinthe au joueur 0
+12012019-230653 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230653 -  envoi des infos du labyrinthe au joueur 0
+12012019-230655 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230655 -  envoi des infos du labyrinthe au joueur 0
+12012019-230657 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230657 -  envoi des infos du labyrinthe au joueur 0
+12012019-230659 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230659 -  envoi des infos du labyrinthe au joueur 0
+12012019-230700 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230700 -  envoi des infos du labyrinthe au joueur 0
+12012019-230702 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230702 -  envoi des infos du labyrinthe au joueur 0
+12012019-230703 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230703 -  envoi des infos du labyrinthe au joueur 0
+12012019-230705 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230705 -  envoi des infos du labyrinthe au joueur 0
+12012019-230706 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230706 -  envoi des infos du labyrinthe au joueur 0
+12012019-230708 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230708 -  envoi des infos du labyrinthe au joueur 0
+12012019-230709 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230709 -  envoi des infos du labyrinthe au joueur 0
+12012019-230711 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230711 -  envoi des infos du labyrinthe au joueur 0
+12012019-230712 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230712 -  envoi des infos du labyrinthe au joueur 0
+12012019-230714 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230714 -  envoi des infos du labyrinthe au joueur 0
+12012019-230715 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230716 -  envoi des infos du labyrinthe au joueur 0
+12012019-230718 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230718 -  envoi des infos du labyrinthe au joueur 0
+12012019-230719 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230719 -  envoi des infos du labyrinthe au joueur 0
+12012019-230721 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230721 -  envoi des infos du labyrinthe au joueur 0
+12012019-230723 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230723 -  envoi des infos du labyrinthe au joueur 0
+12012019-230725 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+12012019-230725 -  envoi des infos du labyrinthe au joueur 0

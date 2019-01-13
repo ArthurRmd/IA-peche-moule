@@ -1,0 +1,281 @@
+Création d'un labyrinthe de 23x21 dont les cases font 45 pixels.
+23x21/D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-S-D-S-S-S-D-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-D-D-S-D-S-S-S-S-S-D-S-D-S-D-S-D-D-D-S-D-D-D-S-D-D-S-S-S-D-S-S-S-D-S-S-S-D-S-S-S-10-S-S-S-S-S-D-D-S-D-D-D-S-D-D-D-D-D-S-D-D-D-S-D-D-S-50-D-S-D-D-S-S-S-S-S-S-S-S-S-S-S-D-S-S-S-D-S-S-S-D-S-D-D-S-S-D-D-D-D-S-D-D-D-D-D-D-D-B-D-S-D-S-D-D-D-D-S-S-S-B-S-D-S-S-F-D-S-S-S-D-S-D-S-S-40-D-S-D-D-D-D-S-D-D-D-S-D-S-D-S-S-D-D-D-D-S-D-D-D-S-D-D-S-S-S-S-S-D-S-D-50-S-S-F-S-S-F-D-S-S-S-S-S-D-D-S-D-S-D-D-S-S-D-D-D-S-D-D-D-D-D-D-D-D-D-S-D-D-S-D-S-S-S-S-40-S-S-D-S-D-S-D-S-S-B-S-S-D-S-D-D-D-D-D-D-F-D-D-S-D-D-S-D-S-D-D-D-D-D-S-D-S-D-D-S-S-S-S-F-S-S-S-S-D-S-S-S-D-S-S-S-S-40-D-S-D-D-D-D-S-D-D-S-S-B-D-D-S-D-S-D-D-D-D-S-S-D-S-D-D-S-S-S-D-S-D-S-D-S-S-S-D-60-S-S-D-S-S-S-D-S-D-D-S-D-D-F-S-D-S-50-D-D-F-D-S-D-D-D-S-D-S-D-D-D-D-S-D-S-D-S-20-S-D-S-40-B-D-S-S-S-D-S-D-F-D-S-D-D-D-D-S-D-S-D-S-D-S-D-S-D-S-D-D-D-S-D-S-D-S-D-D-S-S-S-S-S-S-S-D-S-S-S-D-S-S-S-S-S-D-S-S-S-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D-D/1-1,1
+Le labyrinthe porte le numéro 59311.
+Le placement des bonus porte le numéro 63273;
+Il y a 1 joueur(s)
+Le labyrinthe contient un taux de dune de 40%, 8 frite(s), 10 moule(s) et 5 biére(s)
+Le port du serveur est le 1337. Le timeout pour chaque joueur est de 3000 ms. le délai d'attente minimum entre deux tours est de 100 ms.
+Les screenshots à chaque tour ne sont pas activés
+Serveur en attente de connexion
+************************************************************
+*    -->    13/01/2019 - 00:54:56                          *
+*       Connexion 0 - adresse : 127.0.0.1, /127.0.0.1:55365
+************************************************************
+13012019-005456 -  envoi du numéro de joueur au joueur 0
+13012019-005500 -  envoi des infos du labyrinthe au joueur 0
+13012019-005500 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005500 -  envoi des infos du labyrinthe au joueur 0
+13012019-005500 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005501 -  envoi des infos du labyrinthe au joueur 0
+13012019-005501 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005502 -  envoi des infos du labyrinthe au joueur 0
+13012019-005502 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005503 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005503 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005504 -  envoi des infos du labyrinthe au joueur 0
+13012019-005504 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005505 -  envoi des infos du labyrinthe au joueur 0
+13012019-005505 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005506 -  envoi des infos du labyrinthe au joueur 0
+13012019-005506 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005507 -  envoi des infos du labyrinthe au joueur 0
+13012019-005507 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005508 -  envoi des infos du labyrinthe au joueur 0
+13012019-005508 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005509 -  envoi des infos du labyrinthe au joueur 0
+13012019-005509 - réception du message "N" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005510 -  envoi des infos du labyrinthe au joueur 0
+13012019-005510 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "O" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005511 -  envoi des infos du labyrinthe au joueur 0
+13012019-005511 - réception du message "E" de la part du joueur 0
+Retour de l'exécution de la commande : 
+13012019-005512 -  envoi des infos du labyrinthe au joueur 0
+13012019-005512 - réception du message "S" de la part du joueur 0
+Retour de l'exécution de la commande : 

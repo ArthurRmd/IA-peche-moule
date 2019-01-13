@@ -11,6 +11,7 @@ public class Client{
 
 	public static List tabPosX = new LinkedList();
 	public static List tabPosY = new LinkedList();
+	public static Position anciennePosition = new Position(0,0);
 
 	public static String voisinGauche(Labyrinthe laby , int x ,int y){
 		return laby.getXY(x-1,y).toString();
@@ -38,6 +39,76 @@ public class Client{
 
 		test +=1;
 		return msg;
+	}
+
+
+	public static String cheminAleatoire( Labyrinthe laby, String ancienneDirection, int x, int y ){
+
+		Position[] position = new Position[4];
+		position[0] = new Position(0,0);
+		position[1] = new Position(0,0);
+		position[2] = new Position(0,0);
+		position[3] = new Position(0,0);
+		int positionIndex = 0;
+
+
+		String msg="";
+
+		boolean deplaceNord;
+		boolean deplaceSud;
+		boolean deplaceOuest;
+		boolean deplaceEst;
+
+
+
+		Position Nord = new Position(x, y - 1, "N");
+		Position Sud = new Position(x, y + 1, "S");
+		Position Ouest = new Position(x - 1, y,  "O");
+		Position Est = new Position(x + 1, y, "E");
+
+
+		deplaceNord = laby.marchable(x, y - 1);
+		deplaceSud = laby.marchable(x, y + 1);
+		deplaceOuest = laby.marchable(x - 1, y);
+		deplaceEst = laby.marchable(x + 1, y);
+
+
+		if (deplaceNord && ancienneDirection !="N") {
+			position[positionIndex].setX(Nord.getX());
+			position[positionIndex].setY(Nord.getY());
+			position[positionIndex].setDirection("N");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+		if (deplaceSud && ancienneDirection !="S") {
+			position[positionIndex].setX(Sud.getX());
+			position[positionIndex].setY(Sud.getY());
+			position[positionIndex].setDirection("S");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+		if (deplaceOuest && ancienneDirection !="O") {
+			position[positionIndex].setX(Ouest.getX());
+			position[positionIndex].setY(Ouest.getY());
+			position[positionIndex].setDirection("O");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+		if (deplaceEst && ancienneDirection !="E") {
+			position[positionIndex].setX(Est.getX());
+			position[positionIndex].setY(Est.getY());
+			position[positionIndex].setDirection("E");
+			position[positionIndex].setValide(true);
+			positionIndex++;
+		}
+
+
+
+		int nombreAléatoire = (int)(Math.random()* positionIndex);
+
+		msg = position[nombreAléatoire].getDirection();
+		return msg;
+
 	}
 
 
@@ -105,8 +176,291 @@ public class Client{
 
 
 
+
+
+					if (!test && laby.getXY(i, j).getType()==Case.DUNE &&  laby.getXY(i, j-1).getType()!=Case.DUNE && laby.getXY(i, j-1).getType()!=Case.MOULE) {
+
+
+						if (laby.getXY(i-1, j-1).getType()!=Case.DUNE && laby.getXY(i+1, j-1).getType()!=Case.DUNE && laby.getXY(i+1,j).getType()!=Case.DUNE && laby.getXY(i-1, j).getType()!=Case.DUNE) {
+
+							if (laby.getXY(i-1, j+1).getType()!=Case.DUNE && laby.getXY(i, j+1).getType()!=Case.DUNE && laby.getXY(i+1, j+1).getType()!=Case.DUNE) {
+
+								laby.setXY(i, j-1);
+							}
+						}
+
+					}
+
+
+
+
+				// Anti mur en bas
+				//
+				// XOO
+				// XOO
+				//  X
+				if ( !test && laby.getXY(i, j + 1).getType() == Case.DUNE && laby.getXY(i - 1, j).getType() == Case.DUNE && laby.getXY(i, j).getType() != Case.DUNE) {
+
+
+					if (laby.getXY(i, j - 1).getType() != Case.DUNE && laby.getXY(i + 1, j).getType() != Case.DUNE && laby.getXY(i +1, j - 1).getType() != Case.DUNE) {
+
+						if (laby.getXY(i, j - 1).getType() != Case.MOULE && laby.getXY(i + 1, j).getType() != Case.MOULE && laby.getXY(i +1, j - 1).getType() != Case.MOULE) {
+							laby.setXY(i, j);
+						}
+					}
+
+				}
+
+
+				// Anti mur en Haut
+				//
+				//  X
+				// XOO
+				//  OO
+				if ( !test && laby.getXY(i, j - 1).getType() == Case.DUNE && laby.getXY(i - 1, j ).getType() == Case.DUNE &&  laby.getXY(i, j).getType() != Case.DUNE) {
+
+
+					if (laby.getXY(i, j + 1).getType() != Case.DUNE && laby.getXY(i + 1, j).getType() != Case.DUNE && laby.getXY(i +1, j + 1).getType() != Case.DUNE) {
+
+						if (laby.getXY(i, j + 1).getType() != Case.MOULE && laby.getXY(i + 1, j).getType() != Case.MOULE && laby.getXY(i +1, j + 1).getType() != Case.MOULE) {
+							laby.setXY(i, j);
+						}
+					}
+
+				}
+
+				// Anti mur en Haut
+				//
+				//
+				//  X
+				//
+
+
+
+
+
+
+
 			}
 		}
+
+	}
+
+
+	public static  String cheminPlusCourt(Labyrinthe laby , int x, int y, Position anciennePosition ){
+
+		int placeMoule = -1;
+		String direction = "";
+		String directionDepart ="";
+		String msg="N";
+		boolean trouveMoule;
+
+		int compteurPas;
+
+		int xx;
+		int yy;
+		int j;
+
+
+
+		for (int i=0; i<10000; i++){
+
+			j=0;
+			trouveMoule = false;
+			xx = x;
+			yy = y;
+			direction = cheminAleatoire(laby,anciennePosition.getDirection(),xx, yy);
+			directionDepart =direction;
+
+			if (direction == "N"){
+				yy--;
+			}
+			else if (direction == "S"){
+				yy++;
+			}
+			else if (direction == "O"){
+				xx++;
+			}
+			else{
+				xx--;
+			}
+			compteurPas = 0;
+
+
+			while(j<100 && !trouveMoule){
+
+				System.out.println("  -->" + direction);
+				if ( laby.getXY(xx,yy).getType()==Case.MOULE){
+					trouveMoule = true;
+
+					if (j < placeMoule){
+						placeMoule = j;
+						msg= directionDepart;
+					}
+
+				}
+				else {
+					direction = cheminAleatoire(laby,anciennePosition.getDirection(),xx, yy);
+
+					if (direction == "N"){
+						yy--;
+					}
+					else if (direction == "S"){
+						yy++;
+					}
+					else if (direction == "O"){
+						xx++;
+					}
+					else{
+						xx--;
+					}
+				}
+				j++;
+			}
+
+
+
+		}
+
+
+
+		return msg;
+
+
+	}
+
+	public static  Boolean mouleVoisine(Labyrinthe laby, int x, int y){
+
+
+		if (laby.getXY(x,y).getType() == Case.MOULE){
+			return true;
+		}
+		if (laby.getXY(x+1,y).getType() == Case.MOULE){
+			return true;
+		}
+		if (laby.getXY(x-1,y).getType() == Case.MOULE){
+			return true;
+		}
+		if (laby.getXY(x,y+1).getType() == Case.MOULE){
+			return true;
+		}if (laby.getXY(x,y-1).getType() == Case.MOULE){
+			return true;
+		}
+
+		return false;
+
+
+	}
+	public static  String rechercheMoule(Labyrinthe laby, int x, int y){
+
+
+		String msg ="PAS";
+
+		boolean deplaceNord;
+		boolean deplaceSud;
+		boolean deplaceOuest;
+		boolean deplaceEst;
+
+		boolean deplaceNordEst;
+		boolean deplaceNordOuest;
+		boolean deplaceSudEst;
+		boolean deplaceSudOuest;
+
+		Position Nord = new Position(x, y - 1, "N");
+		Position Sud = new Position(x, y + 1, "S");
+		Position Ouest = new Position(x - 1, y,  "O");
+		Position Est = new Position(x + 1, y, "E");
+
+		Position NordEst = new Position(x+1, y - 1, "N");
+		Position NordOuest = new Position(x-1, y - 1, "N");
+		Position SudEst = new Position(x +1, y+1,  "S");
+		Position SudOuest = new Position(x - 1, y+1, "S");
+
+
+		deplaceNord = laby.marchable(x, y - 1);
+		deplaceSud = laby.marchable(x, y + 1);
+		deplaceOuest = laby.marchable(x - 1, y);
+		deplaceEst = laby.marchable(x + 1, y);
+
+
+		deplaceNordEst = laby.marchable(x+1, y - 1);
+		deplaceNordOuest = laby.marchable(x-1, y - 1);
+		deplaceSudEst = laby.marchable(x + 1, y+1);
+		deplaceSudOuest = laby.marchable(x - 1, y+1);
+
+		if (deplaceNord && laby.getXY( Nord.getX(), Nord.getY()).getType() == Case.MOULE){
+			msg = "N";
+		}
+		else if (deplaceSud && laby.getXY( Sud.getX(), Sud.getY()).getType() == Case.MOULE){
+			msg = "S";
+		}
+		else if (deplaceOuest && laby.getXY( Ouest.getX(), Ouest.getY()).getType() == Case.MOULE){
+			msg = "O";
+		}
+		else if (deplaceEst && laby.getXY( Est.getX(), Est.getY()).getType() == Case.MOULE){
+			msg = "E";
+		}
+		else if (deplaceEst && laby.getXY( Est.getX(), Est.getY()).getType() == Case.MOULE){
+			msg = "E";
+		}
+
+
+		//
+
+		else if (deplaceOuest && laby.getXY( x-1, y-1).getType() == Case.MOULE){
+			msg = "O";
+		}
+		else if (deplaceOuest && laby.getXY( x-1, y+1).getType() == Case.MOULE){
+			msg = "O";
+		}
+
+
+		else if (deplaceEst && laby.getXY( x+1, y-1).getType() == Case.MOULE){
+			msg = "E";
+		}
+		else if (deplaceEst && laby.getXY( x+1, y+1).getType() == Case.MOULE){
+			msg = "E";
+		}
+
+		else if (deplaceNord && laby.getXY( x-1, y-1).getType() == Case.MOULE){
+			msg = "N";
+		}
+		else if (deplaceNord && laby.getXY( x+1, y-1).getType() == Case.MOULE){
+			msg = "N";
+		}
+
+		else if (deplaceSud && laby.getXY( x-1, y+1).getType() == Case.MOULE){
+			msg = "S";
+		}
+		else if (deplaceSud && laby.getXY( x+1, y+1).getType() == Case.MOULE){
+			msg = "S";
+		}
+
+		//
+
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && mouleVoisine(laby, x-2, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && mouleVoisine(laby, x+2, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && mouleVoisine(laby, x, y-2)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && mouleVoisine(laby, x, y+2)){
+			msg = "S";
+		}
+
+
+
+
+
+
+
+
+
+
+		return msg;
 
 	}
 
@@ -258,6 +612,16 @@ public class Client{
 			msg= position[3].getDirection();
 		}
 
+
+
+
+		// Code si moule à cotès
+
+
+		String temp= rechercheMoule(laby,x,y);
+		if(temp != "PAS"){
+			msg = temp;
+		}
 
 
 
@@ -452,47 +816,16 @@ public class Client{
 			int x = laby.getJoueur(Integer.parseInt(numJoueur)).getPosX();
 			int y  = laby.getJoueur(Integer.parseInt(numJoueur)).getPosY();
 
-			System.out.println("Le joueur se situe a " + x + "  " + y);
 
-			System.out.println(laby.toStringLaby());
 
-			for (int i=0 ; i<100; i++) {
+			for (int i=0 ; i<1000; i++) {
 				transformLaby(laby, x, y);
 			}
 			msg = chemin3( x,y, laby);
 
-			//transformLaby(laby, x, y );
-			//transformLaby(laby, x, y );
 
 
-
-			System.out.println("**********\n\n La taille du tableau est : " + laby.getTailleX());
-
-
-
-
-		    System.out.println(msg);
-
-		    /*
-		  	laby.setXY(23,10);
-			laby.setXY(23,9);
-			laby.setXY(23,7);
-			laby.setXY(23,6);
-			laby.setXY(23,5);
-			laby.setXY(23,4);
-			laby.setXY(23,3);
-			laby.setXY(23,2);
-			laby.setXY(23,1);
-*/
-
-			System.out.println(laby.toStringLaby());
-
-
-
-			System.out.println("voici le get XY : " + laby.getXY(1,1));
-
-
-
+			/*
 			//Informations sur le joueur
 		    System.out.println("Je me trouve en : ("+laby.getJoueur(Integer.parseInt(numJoueur)).getPosX()+","+laby.getJoueur(Integer.parseInt(numJoueur)).getPosY()+")");
 		    ArrayList<Integer> infosMoule = new ArrayList<Integer>();
@@ -511,7 +844,7 @@ public class Client{
 		    //Pourquoi ? Aucune idée mais faut bien envoyer quelque chose au serveur alors pourquoi pas ?
 		    //A vous de faire mieux ici :-)
 
-
+*/
 
 
 				//msg = chemin();
