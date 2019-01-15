@@ -7,109 +7,16 @@ import java.util.List;
 import java.util.ListIterator;
 
 
+// Arthur REMOND
+// Océan LESECQ
+// TPB
+
+
 public class Client{
+
 
 	public static List tabPosX = new LinkedList();
 	public static List tabPosY = new LinkedList();
-	public static Position anciennePosition = new Position(0,0);
-
-	public static String voisinGauche(Labyrinthe laby , int x ,int y){
-		return laby.getXY(x-1,y).toString();
-	}
-
-
-
-	public static String chemin (){
-
-		String msg="";
-		int test = (int)(Math.random()*4);
-
-		if(test == 0){
-			msg="E";
-		}
-		else if (test == 1) {
-			msg="O";
-		}
-		else if (test == 2) {
-			msg="N";
-		}
-		else if (test == 3) {
-			msg="S";
-		}
-
-		test +=1;
-		return msg;
-	}
-
-
-	public static String cheminAleatoire( Labyrinthe laby, String ancienneDirection, int x, int y ){
-
-		Position[] position = new Position[4];
-		position[0] = new Position(0,0);
-		position[1] = new Position(0,0);
-		position[2] = new Position(0,0);
-		position[3] = new Position(0,0);
-		int positionIndex = 0;
-
-
-		String msg="";
-
-		boolean deplaceNord;
-		boolean deplaceSud;
-		boolean deplaceOuest;
-		boolean deplaceEst;
-
-
-
-		Position Nord = new Position(x, y - 1, "N");
-		Position Sud = new Position(x, y + 1, "S");
-		Position Ouest = new Position(x - 1, y,  "O");
-		Position Est = new Position(x + 1, y, "E");
-
-
-		deplaceNord = laby.marchable(x, y - 1);
-		deplaceSud = laby.marchable(x, y + 1);
-		deplaceOuest = laby.marchable(x - 1, y);
-		deplaceEst = laby.marchable(x + 1, y);
-
-
-		if (deplaceNord && ancienneDirection !="N") {
-			position[positionIndex].setX(Nord.getX());
-			position[positionIndex].setY(Nord.getY());
-			position[positionIndex].setDirection("N");
-			position[positionIndex].setValide(true);
-			positionIndex++;
-		}
-		if (deplaceSud && ancienneDirection !="S") {
-			position[positionIndex].setX(Sud.getX());
-			position[positionIndex].setY(Sud.getY());
-			position[positionIndex].setDirection("S");
-			position[positionIndex].setValide(true);
-			positionIndex++;
-		}
-		if (deplaceOuest && ancienneDirection !="O") {
-			position[positionIndex].setX(Ouest.getX());
-			position[positionIndex].setY(Ouest.getY());
-			position[positionIndex].setDirection("O");
-			position[positionIndex].setValide(true);
-			positionIndex++;
-		}
-		if (deplaceEst && ancienneDirection !="E") {
-			position[positionIndex].setX(Est.getX());
-			position[positionIndex].setY(Est.getY());
-			position[positionIndex].setDirection("E");
-			position[positionIndex].setValide(true);
-			positionIndex++;
-		}
-
-
-
-		int nombreAléatoire = (int)(Math.random()* positionIndex);
-
-		msg = position[nombreAléatoire].getDirection();
-		return msg;
-
-	}
 
 
 	public static void transformLaby (Labyrinthe laby , int x, int y) {
@@ -124,210 +31,109 @@ public class Client{
 		boolean duneEst = false;
 		boolean test;
 
-		for (int i = 1; i <= tailleX - 1; i++) {
-
-			for (int j = 1; j <= tailleY - 1; j++) {
-
-
-				duneNord = false;
-				duneSud = false;
-				duneOuest = false;
-				duneEst = false;
+		int compteur = 0;
+		boolean continuer = true;
 
 
-				nbDune = 0;
+		while ( continuer && compteur < 500 ) {
 
-				if (x == i && y == j) {
-					test = true;
-				} else {
-					test = false;
-				}
+			continuer = false;
+			for (int i = 1; i <= tailleX - 1; i++) {
 
-
-				if (!test && (laby.getXY(i, j).getType() == Case.SABLE || laby.getXY(i, j).getType() == Case.FRITE || laby.getXY(i, j).getType() == Case.BIERE)) {
+				for (int j = 1; j <= tailleY - 1; j++) {
 
 
-					if (laby.getXY(i, j - 1).getType() == Case.DUNE) {
-						duneNord = true;
-						nbDune++;
-					}
-					if (laby.getXY(i, j + 1).getType() == Case.DUNE) {
-						duneSud = true;
-						nbDune++;
-					}
-					if (laby.getXY(i - 1, j).getType() == Case.DUNE) {
-						duneEst = true;
-						nbDune++;
-					}
-					if (laby.getXY(i + 1, j).getType() == Case.DUNE) {
-						duneOuest = true;
-						nbDune++;
+					duneNord = false;
+					duneSud = false;
+					duneOuest = false;
+					duneEst = false;
+
+
+					nbDune = 0;
+
+					if (x == i && y == j) {
+						test = true;
+					} else {
+						test = false;
 					}
 
 
-					if (nbDune == 3) {
-						laby.setXY(i, j);
+					if (!test && (laby.getXY(i, j).getType() == Case.SABLE || laby.getXY(i, j).getType() == Case.FRITE || laby.getXY(i, j).getType() == Case.BIERE)) {
+
+
+						if (laby.getXY(i, j - 1).getType() == Case.DUNE) {
+							duneNord = true;
+							nbDune++;
+						}
+						if (laby.getXY(i, j + 1).getType() == Case.DUNE) {
+							duneSud = true;
+							nbDune++;
+						}
+						if (laby.getXY(i - 1, j).getType() == Case.DUNE) {
+							duneEst = true;
+							nbDune++;
+						}
+						if (laby.getXY(i + 1, j).getType() == Case.DUNE) {
+							duneOuest = true;
+							nbDune++;
+						}
+
+
+						if (nbDune == 3) {
+							laby.setXY(i, j);
+							continuer = true;
+
+						}
 
 					}
 
-				}
+
+					// Anti mur en bas
+					//
+					// XOO
+					// XOO
+					//  X
+					if (!test && laby.getXY(i, j + 1).getType() == Case.DUNE && laby.getXY(i - 1, j).getType() == Case.DUNE && laby.getXY(i, j).getType() != Case.DUNE  && laby.getXY(i, j).getType() != Case.MOULE) {
 
 
+						if (laby.getXY(i, j - 1).getType() != Case.DUNE && laby.getXY(i + 1, j).getType() != Case.DUNE && laby.getXY(i + 1, j - 1).getType() != Case.DUNE) {
 
-
-
-
-
-					if (!test && laby.getXY(i, j).getType()==Case.DUNE &&  laby.getXY(i, j-1).getType()!=Case.DUNE && laby.getXY(i, j-1).getType()!=Case.MOULE) {
-
-
-						if (laby.getXY(i-1, j-1).getType()!=Case.DUNE && laby.getXY(i+1, j-1).getType()!=Case.DUNE && laby.getXY(i+1,j).getType()!=Case.DUNE && laby.getXY(i-1, j).getType()!=Case.DUNE) {
-
-							if (laby.getXY(i-1, j+1).getType()!=Case.DUNE && laby.getXY(i, j+1).getType()!=Case.DUNE && laby.getXY(i+1, j+1).getType()!=Case.DUNE) {
-
-								laby.setXY(i, j-1);
+							if (laby.getXY(i, j - 1).getType() != Case.MOULE && laby.getXY(i + 1, j).getType() != Case.MOULE && laby.getXY(i + 1, j - 1).getType() != Case.MOULE) {
+								laby.setXY(i, j);
+								continuer = true;
 							}
 						}
 
 					}
 
 
+					// Anti mur en Haut
+					//
+					//  X
+					// XOO
+					//  OO
+					if (!test && laby.getXY(i, j - 1).getType() == Case.DUNE && laby.getXY(i - 1, j).getType() == Case.DUNE && laby.getXY(i, j).getType() != Case.DUNE && laby.getXY(i, j).getType() != Case.MOULE) {
 
 
-				// Anti mur en bas
-				//
-				// XOO
-				// XOO
-				//  X
-				if ( !test && laby.getXY(i, j + 1).getType() == Case.DUNE && laby.getXY(i - 1, j).getType() == Case.DUNE && laby.getXY(i, j).getType() != Case.DUNE) {
+						if (laby.getXY(i, j + 1).getType() != Case.DUNE && laby.getXY(i + 1, j).getType() != Case.DUNE && laby.getXY(i + 1, j + 1).getType() != Case.DUNE) {
 
-
-					if (laby.getXY(i, j - 1).getType() != Case.DUNE && laby.getXY(i + 1, j).getType() != Case.DUNE && laby.getXY(i +1, j - 1).getType() != Case.DUNE) {
-
-						if (laby.getXY(i, j - 1).getType() != Case.MOULE && laby.getXY(i + 1, j).getType() != Case.MOULE && laby.getXY(i +1, j - 1).getType() != Case.MOULE) {
-							laby.setXY(i, j);
+							if (laby.getXY(i, j + 1).getType() != Case.MOULE && laby.getXY(i + 1, j).getType() != Case.MOULE && laby.getXY(i + 1, j + 1).getType() != Case.MOULE) {
+								laby.setXY(i, j);
+								continuer = true;
+							}
 						}
+
 					}
 
-				}
-
-
-				// Anti mur en Haut
-				//
-				//  X
-				// XOO
-				//  OO
-				if ( !test && laby.getXY(i, j - 1).getType() == Case.DUNE && laby.getXY(i - 1, j ).getType() == Case.DUNE &&  laby.getXY(i, j).getType() != Case.DUNE) {
-
-
-					if (laby.getXY(i, j + 1).getType() != Case.DUNE && laby.getXY(i + 1, j).getType() != Case.DUNE && laby.getXY(i +1, j + 1).getType() != Case.DUNE) {
-
-						if (laby.getXY(i, j + 1).getType() != Case.MOULE && laby.getXY(i + 1, j).getType() != Case.MOULE && laby.getXY(i +1, j + 1).getType() != Case.MOULE) {
-							laby.setXY(i, j);
-						}
-					}
 
 				}
-
-				// Anti mur en Haut
-				//
-				//
-				//  X
-				//
-
-
-
-
-
-
-
 			}
+
+			compteur ++;
 		}
 
 	}
 
-
-	public static  String cheminPlusCourt(Labyrinthe laby , int x, int y, Position anciennePosition ){
-
-		int placeMoule = -1;
-		String direction = "";
-		String directionDepart ="";
-		String msg="N";
-		boolean trouveMoule;
-
-		int compteurPas;
-
-		int xx;
-		int yy;
-		int j;
-
-
-
-		for (int i=0; i<10000; i++){
-
-			j=0;
-			trouveMoule = false;
-			xx = x;
-			yy = y;
-			direction = cheminAleatoire(laby,anciennePosition.getDirection(),xx, yy);
-			directionDepart =direction;
-
-			if (direction == "N"){
-				yy--;
-			}
-			else if (direction == "S"){
-				yy++;
-			}
-			else if (direction == "O"){
-				xx++;
-			}
-			else{
-				xx--;
-			}
-			compteurPas = 0;
-
-
-			while(j<100 && !trouveMoule){
-
-				System.out.println("  -->" + direction);
-				if ( laby.getXY(xx,yy).getType()==Case.MOULE){
-					trouveMoule = true;
-
-					if (j < placeMoule){
-						placeMoule = j;
-						msg= directionDepart;
-					}
-
-				}
-				else {
-					direction = cheminAleatoire(laby,anciennePosition.getDirection(),xx, yy);
-
-					if (direction == "N"){
-						yy--;
-					}
-					else if (direction == "S"){
-						yy++;
-					}
-					else if (direction == "O"){
-						xx++;
-					}
-					else{
-						xx--;
-					}
-				}
-				j++;
-			}
-
-
-
-		}
-
-
-
-		return msg;
-
-
-	}
 
 	public static  Boolean mouleVoisine(Labyrinthe laby, int x, int y){
 
@@ -351,6 +157,8 @@ public class Client{
 
 
 	}
+
+
 	public static  String rechercheMoule(Labyrinthe laby, int x, int y){
 
 
@@ -387,6 +195,8 @@ public class Client{
 		deplaceNordOuest = laby.marchable(x-1, y - 1);
 		deplaceSudEst = laby.marchable(x + 1, y+1);
 		deplaceSudOuest = laby.marchable(x - 1, y+1);
+
+
 
 		if (deplaceNord && laby.getXY( Nord.getX(), Nord.getY()).getType() == Case.MOULE){
 			msg = "N";
@@ -452,10 +262,190 @@ public class Client{
 		}
 
 
+		/// Verification gauche gauche gauche (x-3)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && mouleVoisine(laby, x-3, y) ){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && mouleVoisine(laby, x+3, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && mouleVoisine(laby, x, y-3)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && mouleVoisine(laby, x, y+3)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche (x-4)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && mouleVoisine(laby, x-4, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && mouleVoisine(laby, x+4, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && mouleVoisine(laby, x, y-4)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && mouleVoisine(laby, x, y+4)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-5)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && mouleVoisine(laby, x-5, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && mouleVoisine(laby, x+5, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && mouleVoisine(laby, x, y-5)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && mouleVoisine(laby, x, y+5)){
+			msg = "S";
+		}
 
 
 
 
+		/// Verification gauche gauche gauche gauche gauche (x-6)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && mouleVoisine(laby, x-6, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && mouleVoisine(laby, x+6, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && mouleVoisine(laby, x, y-6)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && mouleVoisine(laby, x, y+6)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-7)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && mouleVoisine(laby, x-7, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && mouleVoisine(laby, x+7, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && mouleVoisine(laby, x, y-7)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && mouleVoisine(laby, x, y+7)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-8)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && mouleVoisine(laby, x-8, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && mouleVoisine(laby, x+8, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && mouleVoisine(laby, x, y-8)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && mouleVoisine(laby, x, y+8)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-9)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && mouleVoisine(laby, x-9, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && mouleVoisine(laby, x+9, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && mouleVoisine(laby, x, y-9)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && mouleVoisine(laby, x, y+9)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-10)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && laby.getXY( x-10, y).getType() != Case.DUNE && mouleVoisine(laby, x-10, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && laby.getXY( x+10, y).getType() != Case.DUNE && mouleVoisine(laby, x+10, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && laby.getXY( x, y-10).getType() != Case.DUNE && mouleVoisine(laby, x, y-10)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && laby.getXY( x, y+10).getType() != Case.DUNE && mouleVoisine(laby, x, y+10)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-11)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && laby.getXY( x-10, y).getType() != Case.DUNE && laby.getXY( x-11, y).getType() != Case.DUNE && mouleVoisine(laby, x-11, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && laby.getXY( x+10, y).getType() != Case.DUNE && laby.getXY( x+11, y).getType() != Case.DUNE && mouleVoisine(laby, x+11, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && laby.getXY( x, y-10).getType() != Case.DUNE && laby.getXY( x, y-11).getType() != Case.DUNE && mouleVoisine(laby, x, y-11)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && laby.getXY( x, y+10).getType() != Case.DUNE && laby.getXY( x, y+11).getType() != Case.DUNE && mouleVoisine(laby, x, y+11)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-12)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && laby.getXY( x-10, y).getType() != Case.DUNE && laby.getXY( x-11, y).getType() != Case.DUNE && laby.getXY( x-12, y).getType() != Case.DUNE && mouleVoisine(laby, x-12, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && laby.getXY( x+10, y).getType() != Case.DUNE && laby.getXY( x+11, y).getType() != Case.DUNE && laby.getXY( x+12, y).getType() != Case.DUNE && mouleVoisine(laby, x+12, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && laby.getXY( x, y-10).getType() != Case.DUNE && laby.getXY( x, y-11).getType() != Case.DUNE && laby.getXY( x, y-12).getType() != Case.DUNE && mouleVoisine(laby, x, y-12)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && laby.getXY( x, y+10).getType() != Case.DUNE && laby.getXY( x, y+11).getType() != Case.DUNE && laby.getXY( x, y+12).getType() != Case.DUNE && mouleVoisine(laby, x, y+12)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-13)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && laby.getXY( x-10, y).getType() != Case.DUNE && laby.getXY( x-11, y).getType() != Case.DUNE && laby.getXY( x-12, y).getType() != Case.DUNE && laby.getXY( x-13, y).getType() != Case.DUNE && mouleVoisine(laby, x-13, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && laby.getXY( x+10, y).getType() != Case.DUNE && laby.getXY( x+11, y).getType() != Case.DUNE && laby.getXY( x+12, y).getType() != Case.DUNE && laby.getXY( x+13, y).getType() != Case.DUNE && mouleVoisine(laby, x+13, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && laby.getXY( x, y-10).getType() != Case.DUNE && laby.getXY( x, y-11).getType() != Case.DUNE && laby.getXY( x, y-12).getType() != Case.DUNE && laby.getXY( x, y-13).getType() != Case.DUNE && mouleVoisine(laby, x, y-13)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && laby.getXY( x, y+10).getType() != Case.DUNE && laby.getXY( x, y+11).getType() != Case.DUNE && laby.getXY( x, y+12).getType() != Case.DUNE && laby.getXY( x, y+13).getType() != Case.DUNE && mouleVoisine(laby, x, y+13)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-14)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && laby.getXY( x-10, y).getType() != Case.DUNE && laby.getXY( x-11, y).getType() != Case.DUNE && laby.getXY( x-12, y).getType() != Case.DUNE && laby.getXY( x-13, y).getType() != Case.DUNE && laby.getXY( x-14, y).getType() != Case.DUNE && mouleVoisine(laby, x-14, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && laby.getXY( x+10, y).getType() != Case.DUNE && laby.getXY( x+11, y).getType() != Case.DUNE && laby.getXY( x+12, y).getType() != Case.DUNE && laby.getXY( x+13, y).getType() != Case.DUNE && laby.getXY( x+14, y).getType() != Case.DUNE && mouleVoisine(laby, x+14, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && laby.getXY( x, y-10).getType() != Case.DUNE && laby.getXY( x, y-11).getType() != Case.DUNE && laby.getXY( x, y-12).getType() != Case.DUNE && laby.getXY( x, y-13).getType() != Case.DUNE && laby.getXY( x, y-14).getType() != Case.DUNE && mouleVoisine(laby, x, y-14)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && laby.getXY( x, y+10).getType() != Case.DUNE && laby.getXY( x, y+11).getType() != Case.DUNE && laby.getXY( x, y+12).getType() != Case.DUNE && laby.getXY( x, y+13).getType() != Case.DUNE && laby.getXY( x, y+14).getType() != Case.DUNE && mouleVoisine(laby, x, y+14)){
+			msg = "S";
+		}
+
+		/// Verification gauche gauche gauche gauche gauche (x-15)
+		else if (laby.getXY( x-1, y).getType() != Case.DUNE && laby.getXY( x-2, y).getType() != Case.DUNE && laby.getXY( x-3, y).getType() != Case.DUNE && laby.getXY( x-4, y).getType() != Case.DUNE && laby.getXY( x-5, y).getType() != Case.DUNE && laby.getXY( x-6, y).getType() != Case.DUNE && laby.getXY( x-7, y).getType() != Case.DUNE && laby.getXY( x-8, y).getType() != Case.DUNE && laby.getXY( x-9, y).getType() != Case.DUNE && laby.getXY( x-10, y).getType() != Case.DUNE && laby.getXY( x-11, y).getType() != Case.DUNE && laby.getXY( x-12, y).getType() != Case.DUNE && laby.getXY( x-13, y).getType() != Case.DUNE && laby.getXY( x-14, y).getType() != Case.DUNE && laby.getXY( x-15, y).getType() != Case.DUNE && mouleVoisine(laby, x-15, y)){
+			msg = "O";
+		}
+		else if (laby.getXY( x+1, y).getType() != Case.DUNE && laby.getXY( x+2, y).getType() != Case.DUNE && laby.getXY( x+3, y).getType() != Case.DUNE && laby.getXY( x+4, y).getType() != Case.DUNE && laby.getXY( x+5, y).getType() != Case.DUNE && laby.getXY( x+6, y).getType() != Case.DUNE && laby.getXY( x+7, y).getType() != Case.DUNE && laby.getXY( x+8, y).getType() != Case.DUNE && laby.getXY( x+9, y).getType() != Case.DUNE && laby.getXY( x+10, y).getType() != Case.DUNE && laby.getXY( x+11, y).getType() != Case.DUNE && laby.getXY( x+12, y).getType() != Case.DUNE && laby.getXY( x+13, y).getType() != Case.DUNE && laby.getXY( x+14, y).getType() != Case.DUNE && laby.getXY( x+15, y).getType() != Case.DUNE && mouleVoisine(laby, x+15, y)){
+			msg = "E";
+		}
+		else if (laby.getXY( x, y-1).getType() != Case.DUNE && laby.getXY( x, y-2).getType() != Case.DUNE && laby.getXY( x, y-3).getType() != Case.DUNE && laby.getXY( x, y-4).getType() != Case.DUNE && laby.getXY( x, y-5).getType() != Case.DUNE && laby.getXY( x, y-6).getType() != Case.DUNE && laby.getXY( x, y-7).getType() != Case.DUNE && laby.getXY( x, y-8).getType() != Case.DUNE && laby.getXY( x, y-9).getType() != Case.DUNE && laby.getXY( x, y-10).getType() != Case.DUNE && laby.getXY( x, y-11).getType() != Case.DUNE && laby.getXY( x, y-12).getType() != Case.DUNE && laby.getXY( x, y-13).getType() != Case.DUNE && laby.getXY( x, y-14).getType() != Case.DUNE && laby.getXY( x, y-15).getType() != Case.DUNE && mouleVoisine(laby, x, y-15)){
+			msg = "N";
+		}
+		else if (laby.getXY( x, y+1).getType() != Case.DUNE && laby.getXY( x, y+2).getType() != Case.DUNE && laby.getXY( x, y+3).getType() != Case.DUNE && laby.getXY( x, y+4).getType() != Case.DUNE && laby.getXY( x, y+5).getType() != Case.DUNE && laby.getXY( x, y+6).getType() != Case.DUNE && laby.getXY( x, y+7).getType() != Case.DUNE && laby.getXY( x, y+8).getType() != Case.DUNE && laby.getXY( x, y+9).getType() != Case.DUNE && laby.getXY( x, y+10).getType() != Case.DUNE && laby.getXY( x, y+11).getType() != Case.DUNE && laby.getXY( x, y+12).getType() != Case.DUNE && laby.getXY( x, y+13).getType() != Case.DUNE && laby.getXY( x, y+14).getType() != Case.DUNE && laby.getXY( x, y+15).getType() != Case.DUNE && mouleVoisine(laby, x, y+15)){
+			msg = "S";
+		}
 
 
 
@@ -464,8 +454,7 @@ public class Client{
 
 	}
 
-
-	public static String chemin3 (int x, int y, Labyrinthe laby){
+	public static String okGoogle (int x, int y, Labyrinthe laby){
 
 		List l = new LinkedList();
 		Position[] position = new Position[4];
@@ -650,122 +639,9 @@ public class Client{
 	}
 
 
-	public static boolean culDeSac (Labyrinthe laby , int x , int y , String direction ){
-
-		boolean culDeSac = false;
-
-		if ( direction == "N"){
-
-			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE){
-				culDeSac = true;
-			}
-		}
-		else if ( direction == "S"){
-
-			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
-				culDeSac = true;
-			}
-		}
-		else if ( direction == "O"){
-
-			if (laby.getXY(x+1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
-				culDeSac = true;
-			}
-		}
-		else if ( direction == "E"){
-
-			if (laby.getXY(x-1,y).getType()==Case.DUNE && laby.getXY(x,y-1).getType()==Case.DUNE && laby.getXY(x,y+1).getType()==Case.DUNE){
-				culDeSac = true;
-			}
-		}
 
 
 
-
-
-		return culDeSac;
-	}
-
-	public static String chemin2 (Labyrinthe laby, int x, int y){
-
-
-		String msg ="";
-		String[] chemin = new String[50];
-		List l = new LinkedList();
-
-		int postionTableau = 0;
-		boolean deplaceNord;
-		boolean deplaceSud;
-		boolean deplaceOuest;
-		boolean deplaceEst;
-		String deplacement ="";
-		String positionJoueur = "";
-		boolean fin = false;
-		int nombreBoucle= 0;
-
-
-		boolean trouveMoule = false;
-
-
-
-		while (!trouveMoule) {
-
-
-
-			postionTableau = 0;
-			while (postionTableau < 100 && !culDeSac(laby, x,y, positionJoueur) && !fin) {
-				System.out.println("Ca tourne" + postionTableau);
-
-				deplaceNord = laby.marchable(x, y - 1);
-				deplaceSud = laby.marchable(x, y + 1);
-				deplaceOuest = laby.marchable(x - 1, y);
-				deplaceEst = laby.marchable(x + 1, y);
-
-				if (deplaceNord) {
-					l.add("N");
-				}
-				if (deplaceSud) {
-					l.add("S");
-				}
-				if (deplaceOuest) {
-					l.add("O");
-				}
-				if (deplaceEst) {
-					l.add("E");
-				}
-
-				int nbAleatoire = (int) (Math.random() * l.size());
-
-				deplacement = String.valueOf(l.get(nbAleatoire));
-				chemin[postionTableau] = deplacement;
-
-				if (deplacement == "N") {
-					x++;
-					positionJoueur = "S";
-				} else if (deplacement == "S") {
-					x--;
-					positionJoueur = "N";
-				} else if (deplacement == "O") {
-					y--;
-					positionJoueur = "E";
-				} else {
-					y++;
-					positionJoueur = "O";
-				}
-
-				if(laby.getXY(x,y).getType()==Case.MOULE){
-					trouveMoule = true;
-					fin = true;
-				}
-
-				postionTableau++;
-			}
-
-			nombreBoucle++;
-		}
-		msg = chemin[0];
-		return msg;
-	}
 
 
     public static void main(String[] args){
@@ -806,11 +682,12 @@ public class Client{
 		    /*-----------------------------------------------------------------------*/
 		    
 		    /*TODO - mettre votre stratégie en place ici*/
-		    /*Quelques lignes de code pour vous aider*/
+			/*
+				- okGoogle est une qui retient pour les positions pour essayer d'éviter d'aller deux fois au meme endroit
+				- transformLaby permet d'enlever tout les culs de sac d'un laby mais égalment d'enlever certain coin
+				- rechercheMoule permet de rechercher les moules autour de sois (efficace quand il y a très peu de mur
 
-		    //Creation du labyrinthe en fonction des informations recues
-		    //Bande de veinards, c'est déjà écrit ! Par contre la doc de cette classe n'est pas complète.
-		    //Faut pas trop en demander non plus !
+			*/
 		    Labyrinthe laby = new Labyrinthe(msg);
 
 			int x = laby.getJoueur(Integer.parseInt(numJoueur)).getPosX();
@@ -818,36 +695,18 @@ public class Client{
 
 
 
-			for (int i=0 ; i<1000; i++) {
-				transformLaby(laby, x, y);
-			}
-			msg = chemin3( x,y, laby);
+
+
+			transformLaby(laby, x, y);
+			msg = okGoogle( x,y, laby);
 
 
 
-			/*
-			//Informations sur le joueur
-		    System.out.println("Je me trouve en : ("+laby.getJoueur(Integer.parseInt(numJoueur)).getPosX()+","+laby.getJoueur(Integer.parseInt(numJoueur)).getPosY()+")");
-		    ArrayList<Integer> infosMoule = new ArrayList<Integer>();
-		    //Parcours du plateau pour trouver toutes les moules et leur valeur
-		    for(int j=0;j<laby.getTailleY();j++)
-			for(int i=0;i<laby.getTailleX();i++)
-			    if(laby.getXY(i,j).getType()==Case.MOULE){
-				infosMoule.add(i);infosMoule.add(j);infosMoule.add(laby.getXY(i,j).getPointRapporte());
-			    }
-
-		    //Affichage des informations sur les moules du plateau
-		    for(int i=0;i<infosMoule.size()/3;i++)
-			System.out.println("Moule en ("+infosMoule.get(i*3)+","+infosMoule.get(i*3+1)+") pour "+infosMoule.get(i*3+2)+" points");
-
-		    //Je prépare le message suivant à envoyer au serveur : je vais me déplacer vers l'Est.
-		    //Pourquoi ? Aucune idée mais faut bien envoyer quelque chose au serveur alors pourquoi pas ?
-		    //A vous de faire mieux ici :-)
-
-*/
 
 
-				//msg = chemin();
+
+
+
 
 
 
@@ -877,3 +736,127 @@ public class Client{
 
 	
 }
+
+
+/*
+
+if (bieres){
+					String newMsg = "";
+					msg = (chemin3( x,y, laby));
+
+					if (msg == "S"){
+						newMsg = "F-" + msg + "-" ;
+						msg = (chemin3( x+1,y, laby));
+						newMsg = newMsg + msg + "-" ;
+
+						if (msg == "S"){
+
+							msg = (chemin3( x+1,y, laby));
+							newMsg += msg ;
+
+
+						}
+						else if (msg == "N"){
+							msg = (chemin3( x-1,y, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "O"){
+							msg = (chemin3( x,y-1, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "E"){
+							msg = (chemin3( x,y+1, laby));
+							newMsg += msg ;
+						}
+
+
+					}
+					else if (msg == "N"){
+						newMsg = "F-" + msg + "-" ;
+						msg = (chemin3( x-1,y, laby));
+						newMsg = newMsg + msg + "-" ;
+
+						if (msg == "S"){
+
+							msg = (chemin3( x+1,y, laby));
+							newMsg += msg ;
+
+
+						}
+						else if (msg == "N"){
+							msg = (chemin3( x-1,y, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "O"){
+							msg = (chemin3( x,y-1, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "E"){
+							msg = (chemin3( x,y+1, laby));
+							newMsg += msg ;
+						}
+
+					}
+					else if (msg == "O"){
+						newMsg = "F-" + msg + "-" ;
+						msg = (chemin3( x,y-1, laby));
+						newMsg = newMsg + msg + "-" ;
+
+						if (msg == "S"){
+
+							msg = (chemin3( x+1,y, laby));
+							newMsg += msg ;
+
+
+						}
+						else if (msg == "N"){
+							msg = (chemin3( x-1,y, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "O"){
+							msg = (chemin3( x,y-1, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "E"){
+							msg = (chemin3( x,y+1, laby));
+							newMsg += msg ;
+						}
+					}
+					else if (msg == "E"){
+						newMsg = "F-" + msg + "-" ;
+						msg = (chemin3( x,y+1, laby));
+						newMsg = newMsg + msg + "-" ;
+
+						if (msg == "S"){
+
+							msg = (chemin3( x+1,y, laby));
+							newMsg += msg ;
+
+
+						}
+						else if (msg == "N"){
+							msg = (chemin3( x-1,y, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "O"){
+							msg = (chemin3( x,y-1, laby));
+							newMsg += msg ;
+						}
+						else if (msg == "E"){
+							msg = (chemin3( x,y+1, laby));
+							newMsg += msg ;
+						}
+					}
+
+					msg = newMsg;
+					bieres = false;
+
+					System.out.println("\n*****\n*****\nJe joue 3 fois !!!");
+				}else{
+					));
+					if (biere(laby,msg,x,y)){
+						bieres = true;
+					}
+				}
+
+ */
